@@ -1,0 +1,83 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows10.0.17763.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="brue1.PNG" />
+    <None Remove="brue2.PNG" />
+    <None Remove="changeblue.PNG" />
+    <None Remove="changegreen.PNG" />
+    <None Remove="changered.PNG" />
+    <None Remove="changeyellow.PNG" />
+    <None Remove="defblue.PNG" />
+    <None Remove="defgreen.PNG" />
+    <None Remove="defred.PNG" />
+    <None Remove="defyellow.PNG" />
+    <None Remove="green1.PNG" />
+    <None Remove="green2.PNG" />
+    <None Remove="red1.PNG" />
+    <None Remove="red2.PNG" />
+    <None Remove="switch-off.png" />
+    <None Remove="switch-on.png" />
+    <None Remove="yellow1.PNG" />
+    <None Remove="yellow2.PNG" />
+    <None Remove="リロード.png" />
+    <None Remove="停止ボタン.png" />
+    <None Remove="再生ボタン.png" />
+    <None Remove="設定アイコン.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="changeblue.PNG" />
+    <Resource Include="changegreen.PNG" />
+    <Resource Include="changered.PNG" />
+    <Resource Include="changeyellow.PNG" />
+    <Resource Include="defblue.PNG" />
+    <Resource Include="defgreen.PNG" />
+    <Resource Include="defred.PNG" />
+    <Resource Include="defyellow.PNG" />
+    <Resource Include="yellow1.PNG" />
+    <Resource Include="yellow2.PNG" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.6.1" />
+    <PackageReference Include="Microsoft.Toolkit.Uwp.Notifications" Version="7.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="brue1.PNG" />
+    <Resource Include="brue2.PNG" />
+    <Resource Include="green1.PNG" />
+    <Resource Include="green2.PNG" />
+    <Resource Include="red1.PNG" />
+    <Resource Include="red2.PNG" />
+    <Resource Include="switch-off.png" />
+    <Resource Include="switch-on.png" />
+    <Resource Include="リロード.png" />
+    <Resource Include="停止ボタン.png" />
+    <Resource Include="再生ボタン.png" />
+    <Resource Include="設定アイコン.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
